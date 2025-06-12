@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/titleField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Titolo del proposito" />
+
+        <EditText
+            android:id="@+id/daysField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Giorni (es. lun, mar, ven)"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/sharedWithField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email utente con cui condividere"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/reminderSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/reminder_options"
+            android:layout_marginTop="8dp"/>
+
+
+        <EditText
+            android:id="@+id/timeField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Orario (hh:mm)"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/pickTimeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scegli orario"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/locBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acquisisci posizione"
+            android:layout_marginTop="16dp" />
+
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salva Proposito"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+</ScrollView>

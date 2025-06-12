@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="reminder_options">
+        <item>Nessun promemoria</item>
+        <item>5 minuti prima</item>
+        <item>10 minuti prima</item>
+        <item>30 minuti prima</item>
+    </string-array>
+
+</resources>
